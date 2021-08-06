@@ -5,10 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wanstagram</title>
 
+  <link rel="icon" sizes="192x192" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  
+  <!-- 
+    TODO:
+    search_box, 이전 활동, 프로필 포커싱 시에 모달창
+  -->
+  <header id="header">
+    <div class="container">
+      <a href="/" class="logo"><span class="blind">완스타그램</span></a>
+      <form class="search">
+        <input type="text" class="search_box">
+        <span class="search_text"><span class="material-icons search_icon">search</span>검색</span>
+        <span class="material-icons search_icon-cancel">cancel</span>
+        <div class="modal modal__input"></div>
+      </form>
+      
+      <ul class="menu">
+        <li class="menu-icon">
+          <a href="/" class="main-icon_page">
+            <span class="material-icons view">home</span></a>
+          <span class="blind">메인페이지</span>
+        </li>
+        <li class="menu-icon main-icon_message">
+          <a href="/" class="main-icon_message">
+            <span class="material-icons">send</span></a>
+          <span class="blind">메시지</span>
+        </li>
+        <li class="menu-icon main-icon_search">
+          <a href="/" class="main-icon_search">
+            <span class="material-icons">explore</span></a>
+          <span class="blind">탐색</span>
+        </li>
+        <li class="menu-icon main-icon_log">
+          <span class="material-icons">favorite_border</span>
+          <span class="blind">이전활동</span>
+          <div class="modal modal__log"></div>
+        </li>
+        <li class="menu-icon main-icon_profile">
+          <span class="material-icons">account_circle</span>
+          <span class="blind">프로필</span>
+          <div class="modal modal__profile"></div>
+        </li>
+          
+      </ul>
+    </div>
+  </header>
+  <section class="content-body">
+    <div class="container">
+      <section class="content-body__content">content-body__content</section>
+      <nav id="nav" class="content-body__nav">navigation</nav>
+    </div>
+  </section>
 </body>
 </html>
