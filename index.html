@@ -15,15 +15,21 @@
   <!-- 
     TODO:
     search_box, 이전 활동, 프로필 포커싱 시에 모달창
+    게시물 더보기 클릭 시 모달창(js로 구현)
   -->
   <header id="header">
     <div class="container">
       <a href="/" class="logo"><span class="blind">완스타그램</span></a>
       <form class="search">
-        <input type="text" class="search_box">
         <span class="search_text"><span class="material-icons search_icon">search</span>검색</span>
+        <input type="text" class="search_box">
         <span class="material-icons search_icon-cancel">cancel</span>
-        <div class="modal modal__input"></div>
+        <div class="modal-box">
+          <div class="modal-bg"></div>
+          <div class="modal modal__input">
+            <h3 class="modal__title">최근 검색 항목</h3>
+          </div>
+        </div>
       </form>
       
       <ul class="menu">
@@ -45,21 +51,57 @@
         <li class="menu-icon main-icon_log">
           <span class="material-icons">favorite_border</span>
           <span class="blind">이전활동</span>
-          <div class="modal modal__log"></div>
+          <div class="modal-box">
+            <div class="modal-bg"></div>
+            <div class="modal modal__log"></div>
+          </div>
         </li>
         <li class="menu-icon main-icon_profile">
           <span class="material-icons">account_circle</span>
           <span class="blind">프로필</span>
-          <div class="modal modal__profile"></div>
+          <div class="modal-box">
+            <div class="modal-bg"></div>
+            <div class="modal modal__profile"></div>
+          </div>
         </li>
-          
       </ul>
     </div>
   </header>
   <section class="content-body">
     <div class="container">
-      <section class="content-body__content">content-body__content</section>
       <nav id="nav" class="content-body__nav">navigation</nav>
+      <section class="content-body__content">
+        <div class="story-box"></div>
+        <div class="content-box">
+          <header class="content-box__top">
+            <div class="user-info">
+              <span class="material-icons user__icon">account_circle</span>
+              <span class="user__name">test1</span>
+            </div>
+            <span class="material-icons more">more_horiz</span>
+          </header>
+          <section class="content-box__image"></section>
+          <section class="content-box__description">
+            <div class="top-icons">
+              <span class="material-icons">favorite</span><span class="material-icons">chat_bubble_outline</span><span class="material-icons">send</span><span class="material-icons">bookmark_border</span>
+            </div>
+            <div class="like">좋아요 47개</div>
+            <div class="description-box">
+              <div class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quos quo beatae! Veritatis tenetur atque voluptates recusandae, tempora repellat vero mollitia odit aliquid error? Dolorem voluptatum atque quod aut necessitatibus!
+              </div>
+              <button class="btn__more">더보기</button>
+            </div>
+            <section class="reply-show"></section>
+          </section>
+          <footer class="content-box__reply">
+            <span class="material-icons emoticon">sentiment_satisfied</span>
+            <input type="text" class="reply__input" placeholder="댓글 달기...">
+            <button class="btn__reply">게시</button>
+          </footer>
+        </div>
+        
+      </section>      
     </div>
   </section>
 </body>
