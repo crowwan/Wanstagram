@@ -175,7 +175,7 @@
   gap: 20px;
   line-height: 35px;
 }
-.user-info .user__icon{
+.user__icon{
   font-size: 35px;
   cursor: pointer;
   color: #bbb;
