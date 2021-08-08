@@ -1,7 +1,8 @@
 /* 
   TODO::
-  material-icon : cursor
-  reply show
+  -reply show
+  -do not scrolling when modal-box.content is visible
+  -show class : visible
 */
 /* 
 @follow btn color: #0379ff
@@ -103,15 +104,21 @@
 }
 
 /* MODAL */
-.modal-bg{
+.modal-box{
   display: none;
+}
+.modal-box.visible{
+  display: block;
+}
+.modal-bg{
   position: fixed;
-  top: 0;bottom: 0;left: 0;right: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 10;
 }
 .modal{
-  display: none;
   position:absolute;
   border: 1px solid var(--primary-color);
   border-radius: 6px;
@@ -119,9 +126,6 @@
   box-sizing: border-box;
   z-index: 10;
   background-color: #fff;
-}
-.modal.view{
-  display: block;
 }
 .modal__input{
   top: var(--top-height);
@@ -142,7 +146,17 @@
   height: 200px;
   right: -20px;
 }
-
+.modal-box.content .modal-bg{
+  background-color: #666;
+  opacity: .7;
+}
+.modal__unfollow{
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+}
 /* CONTENT BODY */
 .content-body{
   position: relative;
