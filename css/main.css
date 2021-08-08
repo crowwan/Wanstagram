@@ -183,10 +183,10 @@
 .user-info .user__name{
   font-weight: bold;
   font-size: 16px;
-  cursor: pointer;
 }
-.user-info .user__name:hover{
+.user__name:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 .content-box__top .more{
   position: absolute;
