@@ -3,6 +3,10 @@
   material-icon : cursor
   reply show
 */
+/* 
+@follow btn color: #0379ff
+*/
+
 :root{
   --primary-color: #ddd;
   --top-height: 60px
@@ -241,7 +245,7 @@
   display: none;
 }
 .content-box__description .reply-show{
-
+  /* 달린 댓글 미리 보여주는 기능 */
 }
 .emoticon{
   cursor: pointer;
@@ -274,4 +278,26 @@
   height: calc(100vh - 140px);
   top: var(--top-height);
   padding: 40px 0 0 0;
+}
+#nav .nav-box{
+  margin: 10px 0;
+}
+#nav .user_profile{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user_profile .user__icon{
+  font-size: 36px;
+  color: #bbb;
+}
+.recommend-box__title{
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 10px;
+}
+.recommended .btn{
+  color: #0379ff;
+  position: absolute;
+  right: 0;
 }
