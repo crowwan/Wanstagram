@@ -69,7 +69,24 @@
   </header>
   <section class="content-body">
     <div class="container">
-      <nav id="nav" class="content-body__nav">navigation</nav>
+      <nav id="nav" class="content-body__nav">
+        <div class="nav-box user_profile self">
+          <span class="material-icons user__icon">account_circle</span>
+          <div class="user__name">j.__.wan</div>
+          <!-- 전환 기능 구현 안함 -->
+        </div>
+        <div class="nav-box nav-box__recommend">
+          <div class="recommend-box__title">
+            회원님을 위한 추천
+            <!-- 추천인 모두 보기 기능 구현 안함 -->
+          </div>
+          <div class="user_profile recommended">
+            <span class="material-icons user__icon">account_circle</span>
+            <div class="user__name">j.__.wan</div>
+            <button class="btn btn__follow">팔로우</button>
+          </div>
+        </div>
+      </nav>
       <section class="content-body__content">
         <div class="story-box"></div>
         <div class="content-box">
@@ -100,7 +117,6 @@
             <button class="btn__reply">게시</button>
           </footer>
         </div>
-        
       </section>      
     </div>
   </section>
