@@ -164,9 +164,6 @@
   z-index: 10;
   background-color: #fff;
 }
-.modal.view{
-  display: block;
-}
 ```
 - 모달창이 떴을 때 뒤에 페이지는 기능을 하지 못한다. 즉 클릭을 할 수 없는 상태이므로 모달창의 배경을 화면 전체페이지로 하고 `position: fixed;`로 띄운다.
 - 모달의 경우 특정 아이콘이나 버튼 등을 눌렀을 때 보여야 하므로 기본적으로 `display: none;`을 두고, 보여야 할 것은 클래스에 view를 추가하여 보이게 한다.(js 이용)
@@ -186,6 +183,9 @@
 ```css
 .modal-box{
   display: none;
+}
+.visible{
+  display: block;
 }
 ```
 - 위의 코드에서 `.modal-bg`에 `display:none`속성을 주었지만 이는 이를 감싸는 wrap 태그인 `.modal-box`자체에 주어 이 클래스로 모달창을 보이지 않게 하고 `.visible`이 추가되면 보이게 할 예정이다.
