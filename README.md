@@ -189,3 +189,13 @@
 }
 ```
 - 위의 코드에서 `.modal-bg`에 `display:none`속성을 주었지만 이는 이를 감싸는 wrap 태그인 `.modal-box`자체에 주어 이 클래스로 모달창을 보이지 않게 하고 `.visible`이 추가되면 보이게 할 예정이다.
+
+# js
+js는 `main.js`를 `index.html`과 연결하고 `type = 'module'`로 다른 js 파일을 모듈화 하여 실행할 것이다.
+
+## 모듈 관계
+main.js -> APP.js -> API.js
+- 메인에서 태그를 보내거나 그냥 app의 모듈을 실행한다.
+- app에서는 상황에 따라 api의 메소드들을 호출한다.
+- api는 여러 메소드들을 만든다.
+- 여기서 api가 길어질 것을 고려해 view와 crud로 나누어 만들까 고민중이다.
