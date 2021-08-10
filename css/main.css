@@ -10,7 +10,7 @@
 
 :root{
   --primary-color: #ddd;
-  --top-height: 60px
+  --top-height: 60px;
 }
 
 #header{
@@ -106,9 +106,6 @@
 /* MODAL */
 .modal-box{
   display: none;
-}
-.modal-box.visible{
-  display: block;
 }
 .modal-bg{
   position: fixed;
@@ -314,4 +311,7 @@
   color: #0379ff;
   position: absolute;
   right: 0;
+}
+.visible{
+  display: block;
 }
